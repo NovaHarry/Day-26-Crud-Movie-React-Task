@@ -14,7 +14,7 @@ export default function UserComponent({movie, setMovie}) {
 }
 return (
         <BaseApp
-            title="Movie Details">
+            title="Movie & Series">
             <div className="user-content">
                 {movie.map((movies, idx) => (
                     <Card>
