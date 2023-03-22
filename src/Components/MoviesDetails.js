@@ -13,16 +13,21 @@ export function MoviesDetails({movie}){
         title = "Movie & Series">
         <div className="user-content">
             <Card>
+                <Card.Body>
                     <div className="user-card">
                         <h1>{movies.name}</h1>
                         <p>genre : {movies.genre}</p>
                         <p>rating : {movies.rating}</p>
                         <p>released : {movies.released}</p>
-                        <button className="btn card-btn"
+                        </div>
+                        </Card.Body>
+                        <Card.Footer className="footer">
+                        <button className="btn card-btn footer-button"
                         onClick={()=>history.push(`/edit/${movies.id}`)}
                         >
                         Edit</button>
-                    </div>
+                        </Card.Footer>
+                    
                     </Card>
         </div>
         </BaseApp>
